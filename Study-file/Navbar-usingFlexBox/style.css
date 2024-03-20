@@ -1,0 +1,22 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color:white;
+    height:80px;
+}
+
+.nav-items ul {
+    gap:50px;
+
+}

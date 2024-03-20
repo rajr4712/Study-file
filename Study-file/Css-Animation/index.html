@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    .container {
+        width:40vw;
+        height:30vh;
+        border:2px solid black;
+        background-color: antiquewhite;
+    }
+    .box1 {
+        width:100px;
+        height:100px;
+        background-color: blueviolet;
+        /*Animation */
+        animation-name: identifier;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+    }
+    
+    .container2 {
+        width:40vw;
+        height:30vh;
+        border:2px solid black;
+        background-color: antiquewhite;
+        margin-top: 5%;
+
+    }
+  
+    /*animation-direction:reverse loc47 used here */
+    .box2 {
+        width:100px;
+        height:100px;
+        background-color: blueviolet;
+        /*Animation */
+        animation-name: identifier;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-direction: reverse;
+        /*Shorthand to Combined all in single line - : 
+        animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: identifier 2s ease-in-out 1s infinite reverse;
+    }
+    
+    /*Animation used by @keyframe and identifier is variable name you can give name instead of identifier */
+    @keyframes identifier {
+        from {
+
+        }
+        to {
+            transform: translateX(1000px);
+            background-color: red;
+        }
+    }
+/*Reload a website to see Animation Effect */
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">     
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

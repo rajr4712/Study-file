@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation: example 3s ease-in 1s 2, example2 3s ease-in-out 1s 2;
+}
+
+@keyframes example {
+  0%   {background-color: red;}   /*you can apply any property here like rotate,skew etc */
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+@keyframes example2 {
+    0% {transform: rotate(100deg);}
+    25% {transform: rotate(150deg) , skew(1.5);}
+    50% {transform: rotate(200deg);}
+    100% {transform: rotate(360deg);}
+    
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div class="box1">Box1</div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+

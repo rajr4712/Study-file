@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dom</title>
+</head>
+<body>
+    <h1>hell javascripy object model</h1>
+    <p id="paragraph">Lets go to jermany</p>
+
+    <script>
+        //we can change the html body content by this Javascript method - 
+        document.title = "harry is good";
+
+        // Select the paragraph element by its id and update its text content
+        document.getElementById("paragraph").textContent = "jermany";
+
+        // Select the paragraph element using querySelector and update its text content
+        document.querySelector("p").textContent = "London";
+        document.querySelector("h1").textContent = "Hello world";
+       
+     
+        //show in console and html body content show too by second line
+        console.log(document.title);
+        console.log(document.body);
+
+
+        //body color change of website
+        document.body.style.backgroundColor ="green";
+
+
+
+
+        
+        
+
+    </script>
+</body>
+</html>
